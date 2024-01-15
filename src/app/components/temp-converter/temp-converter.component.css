@@ -1,0 +1,11 @@
+.image
+{
+    height: 258 px;
+}
+
+.card-img{
+    background: url("https://static.scientificamerican.com/sciam/cache/file/9035631C-57BF-4F4A-B964B0D00A6BF9C8_source.jpg?w=600");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+}

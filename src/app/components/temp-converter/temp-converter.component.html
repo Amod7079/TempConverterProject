@@ -1,0 +1,53 @@
+<div class="container ">
+    <h1 class="my-4 input-group text-center text-primary fw-bold my-2">Convert Temperature Website</h1>
+    <div class="card card-img">
+        <div class="card-body">
+            <div class="image-container">
+                <img src="assets\temp.gif" height="200px;" width="200px;" class="image" alt="">
+
+
+            </div>
+
+            <h2 class="text-muted">Fahrenheit To Celsius</h2>
+            <div class="form-container">
+
+                <div class="my-4">
+                    <label style="color: brown;" for="box1"><b> फारेनहाइट में तपमान डालिये </b></label>
+                    <div class="input-group">
+                        <input id="box1" type="text" class="form-control" placeholder="Enter Here..."
+                            [(ngModel)]="valueInF" />
+                        <!-- <button class="btn btn-secondary">Convert</button> -->
+                    </div>
+                    <h1 *ngIf="valueInF>0 || valueInF<=0" class=text-center text-primary>{{valueInF| convertTemp:'C'}}
+                        °C</h1>
+                </div>
+
+
+
+            </div>
+
+
+
+            <h2 class="text-muted">Celsius To Fahrenheit</h2>
+            <div class="form-container">
+
+                <div class="my-4">
+                    <label style="color: brown;" for="box1"><b> सेल्सियस में तपमान डालिये </b></label>
+                    <div class="input-group">
+                        <input id="box1" type="text" class="form-control border border-success"
+                            placeholder="Enter Here..." [(ngModel)]="valueInC" />
+                        <!-- <button class="btn btn-secondary">Convert</button> -->
+                    </div>
+                    <h1 my-4 input-group text-center text-primary fw-bold my-2 *ngIf="valueInC>0 || valueInC<=0">
+                        {{valueInC| convertTemp:'C'}}°F</h1>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
